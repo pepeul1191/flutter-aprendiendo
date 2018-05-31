@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
 import 'pages/splash_page.dart';
+import 'configs/routes.dart';
 
 //void main() => runApp(new HomePage());
 void main() => runApp(new MaterialApp(
@@ -8,10 +8,7 @@ void main() => runApp(new MaterialApp(
     primaryColor: Colors.red, 
     accentColor: Colors.yellowAccent
   ),
-  debugShowCheckedModeBanner: false,
   home: SplashPage(),
-  routes: <String, WidgetBuilder> {
-    '/home': (BuildContext context) => new HomePage(),
-    //'/screen2' : (BuildContext context) => new Screen2()
-  },
+  routes: routes, // de 'configs/routes.dart'
+  debugShowCheckedModeBanner: false,
 ));
