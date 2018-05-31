@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 class SplashPage extends StatefulWidget{
   @override
@@ -6,6 +7,12 @@ class SplashPage extends StatefulWidget{
 }
 
 class _SplashPageState extends State<SplashPage>{
+  @override
+  void initState(){
+    super.initState();
+    Timer(Duration(seconds: 5), ()=> print('ya pasaron 5 segundos'));
+  }
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -52,7 +59,9 @@ class _SplashPageState extends State<SplashPage>{
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    CircularProgressIndicator(),
+                    CircularProgressIndicator(
+                      backgroundColor: Colors.pinkAccent,
+                    ),
                     Padding(
                       padding: EdgeInsets.only(top:20.0),
                     ),
