@@ -10,7 +10,7 @@ class _SplashPageState extends State<SplashPage>{
   @override
   void initState(){
     super.initState();
-    Timer(Duration(seconds: 5), ()=> Navigator.of(context).pushNamed('/home'));
+    Timer(Duration(seconds: 5), ()=> Navigator.of(context).pushNamed('/login'));
   }
 
   @override
