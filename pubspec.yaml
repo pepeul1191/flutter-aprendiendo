@@ -13,6 +13,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  flutter_launcher_icons: "^0.3.2" # dependencia para cambiar el icono de la app
+
+# configurar el icono de la app luego de la depedencia 'flutter_launcher_icons'
+flutter_icons:
+  image_path: "images/icon.png" 
+  android: true
+  ios: "Example-Icon"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec

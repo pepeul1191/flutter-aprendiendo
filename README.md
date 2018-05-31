@@ -7,8 +7,16 @@ A new Flutter project.
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
+### Icono de la app:
+
+Luego de configurar pubspec.yaml con la dependencia 'flutter_launcher_icons' y su configuración de ubicacion:
+
+    $ flutter pub get
+    $ flutter pub pub run flutter_launcher_icons:main
+
 ---
 
 Fuentes:
 
 + https://stackoverflow.com/questions/35847932/is-possible-have-a-configuration-file-in-dart?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
++ https://pub.dartlang.org/packages/flutter_launcher_icons
