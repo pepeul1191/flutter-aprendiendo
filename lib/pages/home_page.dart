@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../configs/constants.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
           title: new Text('Welcome to Flutter'),
         ),
         body: new Center(
-          child: new Text('Hello World'),
+          child: new Text('BASE_URL : ' + CONSTANTS['BASE_URL']),
         ),
       ),
     );

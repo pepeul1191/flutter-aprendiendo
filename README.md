@@ -11,4 +11,4 @@ For help getting started with Flutter, view our online
 
 Fuentes:
 
-+ https://medium.com/@vigneshprakash15/flutter-splash-screen-84fb0307ac55
++ https://stackoverflow.com/questions/35847932/is-possible-have-a-configuration-file-in-dart?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
