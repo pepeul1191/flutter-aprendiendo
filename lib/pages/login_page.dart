@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/login_service.dart' as loginService;
+import '../configs/databases.dart' as DB;
 //import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -53,10 +54,16 @@ class _LoginPageState extends State<LoginPage> {
           height: 42.0,
           onPressed: () {
             //Navigator.of(context).pushNamed('/home');
-            loginService.demoGet().then((response){
-              print(response);
-            }).catchError((e){
-              print(e);
+            //probando db shared_preferences
+            DB.get('intento').then((value){
+              print("1 ++++++++++++++++++++++++++++++++++++++++++++++++");
+              print(value);
+              //probando service
+              loginService.demoGet().then((response){
+                print(response);
+              }).catchError((e){
+                print(e);
+              });
             });
           },
           color: Colors.lightBlueAccent,
