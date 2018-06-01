@@ -14,6 +14,11 @@ Luego de configurar pubspec.yaml con la dependencia 'flutter_launcher_icons' y s
     $ flutter pub get
     $ flutter pub pub run flutter_launcher_icons:main
 
+## Servidor de Prueba Sinatra
+
+    $ bundler install
+    $ ruby server.rb -o <ip>
+
 ---
 
 Fuentes:

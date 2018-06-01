@@ -39,6 +39,7 @@ class _SplashPageState extends State<SplashPage>{
                           color: Colors.greenAccent,
                           size: 50.0,
                         )
+                        //child: Image.asset('assets/icon.png'),
                       ),
                       Padding(
                         padding: EdgeInsets.only(top:10.0)

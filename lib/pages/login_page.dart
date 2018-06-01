@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import '../services/login_service.dart' as loginService;
+//import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
   static String tag = 'login-page';
@@ -51,7 +52,12 @@ class _LoginPageState extends State<LoginPage> {
           minWidth: 200.0,
           height: 42.0,
           onPressed: () {
-            Navigator.of(context).pushNamed('/home');
+            //Navigator.of(context).pushNamed('/home');
+            loginService.demoGet().then((response){
+              print(response);
+            }).catchError((e){
+              print(e);
+            });
           },
           color: Colors.lightBlueAccent,
           child: Text('Log In', style: TextStyle(color: Colors.white)),
